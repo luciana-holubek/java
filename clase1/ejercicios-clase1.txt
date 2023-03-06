@@ -1,0 +1,65 @@
+1)
+a)
+        int numeroInicio = 3;
+        int numeroFin = 15;
+        
+        while(numeroInicio<=numeroFin){
+            System.out.println(numeroInicio + " ");
+            numeroInicio = numeroInicio+1;
+        }
+
+b) 
+        int numeroInicio = 3;
+        int numeroFin = 15;
+        
+        while(numeroInicio<=numeroFin){
+            if(numeroInicio % 2 == 0){
+            System.out.println(numeroInicio + " ");
+            }
+            else {
+                System.out.println("---");
+            }
+            numeroInicio = numeroInicio+1;
+        }
+
+c)
+        int numeroInicio = 3;
+        int numeroFin = 15;
+        boolean bandera = true;
+        
+        while(numeroInicio<=numeroFin){
+            if(numeroInicio % 2 == 0 && bandera==false){
+            System.out.println(numeroInicio + " ");
+            }
+            if(numeroInicio % 2 != 0 && bandera==true) {
+                System.out.println(numeroInicio+" ");
+            }
+            numeroInicio = numeroInicio+1;
+        }
+
+d)
+        int numeroInicio = 3;
+        int numeroFin = 15;
+        boolean bandera = true;
+        
+        for(int i=numeroFin; i>=numeroInicio; i--){
+            if(i % 2 == 0){
+            System.out.println(i);
+        }
+        }
+
+
+2)
+        int ingreso_mensual = 400000;
+        int vehiculos = 2;
+        boolean antiguedad_vehiculos = true;
+        int inmuebles = 3;
+        boolean embarcacion = false;
+        
+        if((ingreso_mensual >= 489083) || (vehiculos>=3 && antiguedad_vehiculos==true) || (inmuebles>=3) || (embarcacion==true)){
+            System.out.print("Pertenece al segmento de ingresos altos");
+        }
+        else{
+            System.out.print("No pertenece al segmento de ingresos altos");
+        }
+    }
